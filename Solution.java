@@ -1,20 +1,24 @@
-public class MethodCall
-{
-   public static void main(String[] args)
-   {
-      int a = 5, b = 7;
-      int m = min(a, b);
-      System.out.println("Minimum is "+ m);
-   }
+/* 
+Минимум двух чисел
+*/
+public class Solution {
+    public static int min(int a, int b) {
+        //напишите тут ваш код
+      
+        if(a > b){
+           return b;
+            
+        }
+        else {
+            return a;
+        }
+        
+       
+    }
 
-   public static int min(int c, int d)
-   {
-      int m2;
-      if (c < d)
-           m2 = c;
-      else
-           m2 = d;
-
-      return m2;
-   }
+    public static void main(String[] args) throws Exception {
+        System.out.println(min(12, 33));
+        System.out.println(min(-20, 0));
+        System.out.println(min(-10, -20));
+    }
 }
